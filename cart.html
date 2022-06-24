@@ -4,18 +4,23 @@
         <meta charset="utf-8">
         <title></title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <!--<script src =" https://smtpjs.com/v3/smtp.js"></script>-->
         <style>
             body {
                 font-family:        'Times New Roman', Times, serif;
                 background-image:    url('ShopImages/backgroundDesignED.jpg');
             }
             form {
-                display:            table;
+                margin-left: 25%;
+                margin-top: 5%;
+                border-radius: 25px;
+                /*display:            table;*/
                 padding:            10px;
-	            border:             thin dotted black;
+	            border:             solid black;
 	            background-color: white;
                 width:              40%;
+            }
+            h1 {
+                text-align: center;
             }
             a {
                 color:             black;
@@ -44,103 +49,40 @@
         </style>
     </head>
     <body>
-        <h1>Get Repair</h1>
-            <h2>Please fill out the form below:</h2>
-            <div id="sendCon">
-            </div>
             <div id="formDlt">
                 <!--action="confirmPage.html"-->
-                <!--<form onsubmit="sendEmail()">-->
-                <form action="https://formsubmit.co/a6159dc71a58013696e6228df3bc6804" method="POST">
+                 <form action="https://formsubmit.co/markhunters2000@gmail.com" method="POST">
+                    <h1>Get Repair</h1>
                      <div class="tablerow">
                          <p class="heading">Enter Contact Information</p>
                      </div>
                     <div class="tablerow">
                          <p>Email:</p> 
-                         <p><input id="email" name="email" type="email" placeholder="Enter Email..." required> </p> 
+                         <p><input id="email" name="email" type="email" placeholder="Enter Email..."> </p>
                      </div> 
+                     <div class="tablerow">
+                        <p>and/or</p> 
+                        <p></p>
+                   </div> 
                     <div class="tablerow">
                          <p>Phone Number:</p> 
-                         <p><input id="number" name="number" type="text" placeholder="Enter Phone Number..." required> </p>
+                         <p><input id="number" name="number" type="text" placeholder="Enter Phone Number..."> </p>
                     </div> 
-                     <div class="tablerow">
-                         <p>Type of Device:</p>
-                    <select name="device id="type">
-                         <option value="item0">--Select an Item--</option>
-                         <option value="item1">Samsung</option>
-                         <option value="item2">Iphone</option>
-                         <option value="item3">Laptop</option>
-                         <option value="item4">Console</option>
-                     </select>
-                    <select name="model" id="size">
-                         <option value="">-- select one -- </option>
-                    </select>
-                     </div> 
                     <div class="tablerow"> 
                          <p class="heading">Condition</p>
                      </div>
-                    <div class="tablerow">
-                         <p>Issue:</p>
-                    <select name="condition" id="condition">
-                         <option value="1">--Select Issue--</option>
-                         <option value="2">Cracked screen</option>
-                         <option value="3">Dead battery</option>
-                         <option value="4">Other</option>
-                     </select>
-                     </div>
-                    <div class="tablerow">
-                         <p class="heading">Detailed Condition</p>
-                     </div>
                     <div class="tablerow">                           
-                         <p>If your device is not included please provide it here along with a description of the devices issues:</p>
+                         <p>devices issues:</p>
                          <p> <textarea id="comment" name="comments" placeholder="Device: Iphone 4. My Iphone quit working and I am not sure whats wrong with it." ></textarea></p> 
                      </div>
                     <div class="tablerow">
                          <p></p>
-                         <p><button id="btn" type="submit" value="Submit">send</button></p>      
+                         <p><input id="btn" type="submit" value="Submit"></p>    
+                         <p><a href="phoneRepair.html">RETURN TO THE HOME PAGE</a></p>
                      </div>
                      <br>
-                         <p id="unsure">(if you are not sure about your repair, please return to the home page and contact me directly.)</p>
                 </form>
             </div>
-                         <p><a href="phoneRepair.html">RETURN TO THE HOME PAGE</a></p>
-            <script  src =" https://smtpjs.com/v3/smtp.js"></script>
-            <script>
-                function sendEmail() {
-                    Email.send({
-                        Host : "smtp.gmail.com",
-                        Username : "awesomeman23",
-                        Password : "MF$#@ivp20",
-                        To : "markhunters2000@gmail.com",
-                        From : "forimportantuse06@gmail.com", //document.getElementById("email").value,
-                        Subject : "New Contact Form Enquiry",
-                        Body : "Name: " + document.getElementById("type").value
-                       // + "<br> Email: " + document.getElementById("email").value
-                       // + "<br> Phone #: " + document.getElementById("number").value
-                       // + "<br> Condition: " + document.getElementById("comment").value
-                    }).then(
-                        message => alert ("message sent successfully")
-                    );
-                }
-            </script>
-              <script>
-                    $(document).ready(function () {
-                        $("#type").change(function () {
-                        var val = $(this).val();
-                        if (val == "item1") {
-                            $("#size").html("<option value='test'>Samsung: S22</option><option value='test2'>Samsung: S21</option>");
-                        } else if (val == "item2") {
-                            $("#size").html("<option value='test'>Iphone: 12</option><option value='test2'>Iphone: S12</option><option value='test2'>Iphone: 12 mini</option>");
-                        } else if (val == "item3") {
-                            $("#size").html("<option value='test'>item3: test 1</option><option value='test2'>item3: test 2</option>");
-                        } else if (val == "item4") {
-                                $("#size").html("<option value='test'>item4: test 1</option><option value='test2'>item4: test 2</option>");
-                        } else if (val == "item0") {
-                            $("#size").html("<option value=''>--select one--</option>");
-                        }
-                    });
-                });   
-            </script>
-       <!-- <script src='cart.js'></script>-->
+        <script src='cart.js'></script>
     </body>
 </html> 
