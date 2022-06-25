@@ -1,0 +1,141 @@
+body {
+    font-family:        'Times New Roman', Times, serif;
+    margin:              0px;
+    background-color: white;
+    background-image: url(ShopImages/cracked2.png); 
+    background-repeat: no-repeat;
+    background-attachment: absolute;
+    background-position: right;
+    background-size: 749px 497px;
+}
+p {
+    
+}
+.Hcontainer {
+    display: flex;
+    background-color: #293855;
+    height: 100px;
+    box-shadow: 15px 20px 50px black
+}
+.Hcontainer.div {
+    padding: 0px;
+}
+.siteHeader {
+    flex: 10;
+    order: 1;
+    color: white;
+    align-self: center;
+    padding-left: 20px;
+    justify-content: center;
+    font-size: 50px;
+  
+}
+.link1 {
+    flex: 1;
+    order: 2;
+    font-size: 25px;
+    background-color: #4265d6;
+    border-left: 10px;
+    border-radius: 25px;
+    margin: 30px;
+    text-align: center;
+}
+.link2 {
+    flex: 1;
+    order: 3;
+    font-size: 25px;
+    background-color: #4265d6;
+    border-left: 10px;
+    border-radius: 25px;
+    margin: 30px;
+    text-align: center;
+}
+.link3 {
+    flex: 1;
+    order: 4;
+    font-size: 25px;
+    background-color: #4265d6;
+    border-left: 10px;
+    border-radius: 25px;
+    margin: 30px;
+    text-align: center;
+}
+a {
+   color:              white;
+}
+a:hover {
+    color:              black;
+}
+#mainLinkTxt {
+    color:              white;
+    font-size:          30px;
+    position:           absolute;
+    padding-left:       62%;
+    padding-right:      28%;
+}
+#mainLink {
+    position:           absolute;
+    top:                53%;
+    left:               62%;  
+}
+#mainDivImg {
+    width:              50%;
+    height:             500px;
+    margin-left:        25%;
+    margin-right:       25%;
+    margin-bottom:      10px;
+    border:             2px solid white;
+}
+#H2 {
+    margin-top:         2%;
+    margin-left:        10px;
+}
+.itemContainer {
+  display:              flex;
+  justify-content: space-between;
+  width:   100%;
+}
+.itemContainer div {
+    color: white;
+    background-color: #293855;
+    text-align:         center;
+    font-style: bold;
+    border-radius:      25px;
+    margin-top:         50px;
+    margin-left: 125px;
+    margin-right: 125px;
+    padding: 5px;
+    box-shadow: 20px 20px 12px grey;
+}
+.item1 {
+    flex:               1; 
+    order:              1;
+    width: 25%;   
+}
+.item2 {
+    flex:               1;
+    order:              2;
+ 
+
+}
+.item3 {
+    flex:               1;     
+    order:              3; 
+  
+}
+.centerIMG {
+    display:            block;
+    margin-left:        auto;
+    margin-right:       auto;
+    width:              50%;
+}
+#description {
+    color: white;
+}
+footer {
+    margin-top: 50px;
+    color: white;
+    text-align:         center;
+    background-color: #293855;
+    margin-bottom: 5px;
+}
