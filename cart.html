@@ -7,82 +7,82 @@
         <style>
             body {
                 font-family:        'Times New Roman', Times, serif;
-                background-image:    url('ShopImages/backgroundDesignED.jpg');
+                align-items: center;
+                /*display: flex;
+                justify-content: center;*/
+                background-color: white;
             }
             form {
-                margin-left: 25%;
+                margin-left: 40%;;
+                box-shadow: 20px 20px 50px grey;
                 margin-top: 5%;
+                height: 550px;
+                width:  400px;
                 border-radius: 25px;
-                /*display:            table;*/
-                padding:            10px;
+                padding:            25px;
 	            border:             solid black;
-	            background-color: white;
-                width:              40%;
+	            background-color: #293855;
+                box-sizing: border-box;
             }
             h1 {
                 text-align: center;
             }
+            #email {
+                padding: 5px;
+                border-radius: 15px;
+                font-size: 18px;
+                width: 100%;
+                height: 40px;
+                margin-bottom: 20px;
+            }
+            #number {
+                padding: 5px;
+                border-radius: 15px;
+                font-size: 18px;
+                width: 100%;
+                height: 40px;
+                margin-bottom: 20px;
+            }
+            #comment {
+                padding: 5px;
+                border-radius: 15px;
+	            width:              100%;
+	            height:             200px;
+                margin-bottom: 20px;
+                font-size: 18px;
+            }
+            #btn {
+                padding: 5px;
+                background-color: #4265d6;
+                border-color: #4265d6;
+                border-radius: 15px;
+                width: 100%;
+                height: 40px;
+            }
             a {
+                margin-top: 10px;
                 color:             black;
             }
-            div.tablerow {
-                display:            table-row;
-            }
-            div.tablerow p {
-	            display:            table-cell;
-	            vertical-align:     top;
-	            padding:            3px;
-            }
-            div.tablerow p:first-child {
-	            text-align:         right;
-            }
-            p.heading {
-	            font-weight:        bold;
-            }
-            #unsure {
-                text-align:         center;
-            }
-             form textarea {
-	            width:              500px;
-	            height:             200px;
+            #home {
+                text-align: center;
+                margin-top: 30px;
             }
         </style>
     </head>
-    <body>
-            <div id="formDlt">
-                <!--action="confirmPage.html"-->
-                 <form action="https://formsubmit.co/markhunters2000@gmail.com" method="POST">
-                    <h1>Get Repair</h1>
-                     <div class="tablerow">
-                         <p class="heading">Enter Contact Information</p>
-                     </div>
-                    <div class="tablerow">
-                         <p>Email:</p> 
-                         <p><input id="email" name="email" type="email" placeholder="Enter Email..."> </p>
-                     </div> 
-                     <div class="tablerow">
-                        <p>and/or</p> 
-                        <p></p>
-                   </div> 
-                    <div class="tablerow">
-                         <p>Phone Number:</p> 
-                         <p><input id="number" name="number" type="text" placeholder="Enter Phone Number..."> </p>
-                    </div> 
-                    <div class="tablerow"> 
-                         <p class="heading">Condition</p>
-                     </div>
-                    <div class="tablerow">                           
-                         <p>devices issues:</p>
-                         <p> <textarea id="comment" name="comments" placeholder="Device: Iphone 4. My Iphone quit working and I am not sure whats wrong with it." ></textarea></p> 
-                     </div>
-                    <div class="tablerow">
-                         <p></p>
-                         <p><input id="btn" type="submit" value="Submit"></p>    
-                         <p><a href="phoneRepair.html">RETURN TO THE HOME PAGE</a></p>
-                     </div>
+        <body>  
+                  <form action="https://formsubmit.co/markhunters2000@gmail.com" method="POST">
+                     <h1>Get Repair</h1>
+                        <input id="email" name="email" type="email" placeholder="Enter Email..."> 
+                        
+                        <input id="number" name="number" type="text" placeholder="Enter Phone Number...">                
+                
+                         <textarea id="comment" name="comments" placeholder="Example: I have an Iphone 11 that needs a new screen." ></textarea>
+                            
+                          <input id="btn" type="submit" value="Submit">   
+                           <br>
+                        <p id="home"><a href="phoneRepair.html">RETURN TO HOME PAGE</a></p>                         
                      <br>
                 </form>
-            </div>
         <script src='cart.js'></script>
     </body>
 </html> 
